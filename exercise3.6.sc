@@ -6,7 +6,7 @@
 
 def init[A](l: List[A]): List[A] =
   l match {
-    case List(a) => l
+    case List(_) => l
     case _ :: b => init(b)
     case _ => l
   }
